@@ -1,0 +1,37 @@
+# Etapa 2: Base de Conhecimento - NexaFin
+
+---
+
+## 1. Dados Utilizados
+
+| Arquivo | Formato | Para que serve no NexaFin? |
+| :--- | :--- | :--- |
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores para dar continuidade ao atendimento de forma mais eficiente. |
+| `perfil_investidor.json` | JSON | Personalizar as explicações e recomendações conforme o perfil do usuário. |
+| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil e fornecer dados técnicos para simulação. |
+| `transacoes.csv` | CSV | Analisar o padrão de gastos do cliente para oferecer insights financeiros. |
+
+---
+
+## 2. Adaptações nos Dados
+Os dados originais foram expandidos para incluir tags de "Liquidez" e "Grau de Risco" no arquivo de produtos. Isso garante que a IA não sugira investimentos de alto risco para usuários com perfil conservador, mantendo a segurança da experiência do usuário (UX).
+
+---
+
+## 3. Estratégia de Integração
+
+### Como os dados são carregados?
+Os arquivos JSON e CSV são carregados através da biblioteca **Pandas** no Python durante a inicialização da aplicação. Os dados são estruturados em DataFrames para facilitar a busca e filtragem rápida.
+
+### Como os dados são usados no prompt?
+É utilizada uma abordagem de consulta dinâmica. O Agente identifica a intenção do usuário e busca apenas as fatias relevantes dos dados (ex: apenas a linha do CDB no JSON de produtos) para injetar no contexto do prompt, economizando tokens e mantendo a precisão da resposta.
+
+---
+
+# Etapa 2: Base de Conhecimento na Prática
+
+## 1. Implementação da Persistência
+O arquivo `historico_atendimento.csv` é atualizado ao final de cada interação relevante, permitindo que a "memória" do agente persista entre diferentes sessões de uso.
+
+## 2. Garantia de Veracidade (Grounding)
+A base de conhecimento serve como limitador para a IA. Caso o usuário solicite informações sobre um produto que não consta em `produtos_financeiros.json`, o agente responde que não possui acesso a esses dados no momento, evitando a criação de taxas fictícias.

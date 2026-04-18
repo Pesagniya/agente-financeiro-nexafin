@@ -1,0 +1,46 @@
+[
+    {
+        "id": "prod_01",
+        "nome": "CDB Liquidez Diária",
+        "tipo": "Renda Fixa",
+        "rentabilidade": "100% CDI",
+        "vencimento": "720 dias",
+        "valor_minimo": 100.0,
+        "liquidez": "Imediata",
+        "risco": "Baixo",
+        "descricao": "Ideal para reserva de emergência, permitindo o resgate a qualquer momento."
+    },
+    {
+        "id": "prod_02",
+        "nome": "Tesouro Selic 2029",
+        "tipo": "Renda Fixa",
+        "rentabilidade": "Selic + 0,05%",
+        "vencimento": "01/03/2029",
+        "valor_minimo": 140.0,
+        "liquidez": "D+1",
+        "risco": "Baixo",
+        "descricao": "Título público garantido pelo Governo Federal. Baixíssimo risco."
+    },
+    {
+        "id": "prod_03",
+        "nome": "LCI Imobiliário",
+        "tipo": "Renda Fixa",
+        "rentabilidade": "92% CDI",
+        "vencimento": "360 dias",
+        "valor_minimo": 500.0,
+        "liquidez": "No vencimento",
+        "risco": "Baixo",
+        "descricao": "Isento de Imposto de Renda para pessoa física."
+    },
+    {
+        "id": "prod_04",
+        "nome": "Fundo Multimercado Estável",
+        "tipo": "Multimercado",
+        "rentabilidade": "Alvo 110% CDI",
+        "vencimento": "Indeterminado",
+        "valor_minimo": 1000.0,
+        "liquidez": "D+15",
+        "risco": "Médio",
+        "descricao": "Diversifica entre juros, câmbio e ações com foco em baixa volatilidade."
+    }
+]

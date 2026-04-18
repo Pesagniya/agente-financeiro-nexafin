@@ -1,0 +1,30 @@
+{
+    "usuario": {
+        "id": "user_01",
+        "nome": "Carlos Silva",
+        "perfil": "Conservador",
+        "objetivos": [
+            "Reserva de Emergência",
+            "Segurança"
+        ],
+        "tolerancia_risco": "Baixa",
+        "conhecimento_mercado": "Iniciante",
+        "preferencias": {
+            "liquidez": "Alta",
+            "prazo": "Curto/Médio",
+            "instrumentos": [
+                "CDB",
+                "Tesouro Selic",
+                "Poupança"
+            ]
+        },
+        "ultima_atualizacao": "2026-03-20"
+    },
+    "configuracoes_recomendacao": {
+        "diversificacao_sugerida": {
+            "Renda Fixa Pos-fixada": "80%",
+            "Renda Fixa Pre-fixada": "15%",
+            "Multimercado Baixo Risco": "5%"
+        }
+    }
+}

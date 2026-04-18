@@ -1,0 +1,7 @@
+id_transacao,data,categoria,descricao,valor,tipo
+tx_101,2026-03-01,Alimentação,Supermercado,-350.5,debito
+tx_102,2026-03-05,Transporte,Combustível,-200.0,debito
+tx_103,2026-03-10,Lazer,Cinema,-85.0,debito
+tx_104,2026-03-15,Saúde,Farmácia,-120.0,debito
+tx_105,2026-03-20,Educação,Curso Online,-450.0,debito
+tx_106,2026-03-25,Investimento,Aporte CDB,1000.0,credito

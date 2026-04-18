@@ -1,0 +1,6 @@
+data_hora,usuario_id,mensagem_usuario,resposta_agente,intencao
+2026-04-15 10:30:00,user_01,"Olá, o que é CDI?",O CDI (Certificado de Depósito Interbancário) é uma taxa que reflete o custo do dinheiro entre bancos e serve como referência para investimentos.,explicacao
+2026-04-15 10:32:00,user_01,E quanto rende 1000 reais nisso?,"Com a taxa atual, 1000 reais renderiam aproximadamente X reais por ano (valor demonstrativo).",simulacao
+2026-04-16 14:00:00,user_01,Quero saber sobre CDB.,O CDB é um título de renda fixa onde você empresta dinheiro ao banco em troca de juros.,explicacao
+2026-04-16 14:05:00,user_01,Qual a liquidez dele?,Depende do produto: temos opções com liquidez diária ou apenas no vencimento.,detalhe_tecnico
+2026-04-17 09:15:00,user_02,"Bom dia, sou perfil conservador?","Olá! De acordo com seus dados, você possui um perfil conservador, priorizando segurança.",perfil
