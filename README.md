@@ -63,7 +63,7 @@ Onde:
 3.  Configure sua chave de API no arquivo `.env`.
 4.  Execute a aplicação:
     ```bash
-    streamlit run app.py
+    streamlit run src/app.py
     ```
 
 ---
